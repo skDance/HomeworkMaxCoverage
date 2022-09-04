@@ -63,7 +63,7 @@ internal class MainKtTest {
         val monthLimit = 7_500_000
         val accountType = "Visa"
         val result = calcCommission(accountType, monthLimit, amount)
-        assertEquals(35001 , result)
+        assertEquals(3500 , result)
     }
 
     @Test
@@ -72,7 +72,7 @@ internal class MainKtTest {
         val monthLimit = 7_500_000
         val accountType = "Мир"
         val result = calcCommission(accountType, monthLimit, amount)
-        assertEquals(337501 , result)
+        assertEquals(33750 , result)
     }
 
     @Test
@@ -81,7 +81,7 @@ internal class MainKtTest {
         val monthLimit = 7_500_000
         val accountType = "Мир"
         val result = calcCommission(accountType, monthLimit, amount)
-        assertEquals(35001 , result)
+        assertEquals(3500 , result)
     }
 
     @Test
